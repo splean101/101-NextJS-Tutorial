@@ -1,6 +1,8 @@
+import Heading from "@/components/heading";
+
 const Contact = () => {
     return (
-      <h3>my contact</h3>
+      <Heading text="The only first contact" tag="h1" />
     );
   };
   
