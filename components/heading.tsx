@@ -1,9 +1,8 @@
-interface Tag {
-  tag: string;
+type HeadingProps = {
+  tag?: keyof JSX.IntrinsicElements;
   text: string;
-}
-const Heading = ({ tag, text }: Tag) => {
-  const Tag = tag || 'h1';
+};
+const Heading = ({ tag: Tag = 'h1', text }: HeadingProps) => {
   return <Tag>{text}</Tag>;
 };
 
