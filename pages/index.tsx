@@ -1,10 +1,10 @@
 import Heading from '@/components/heading';
-import styles from '../styles/Home.module.css';
+import styles from '../styles/Home.module.scss';
 
 const Home = () => {
   return (
     <div className={styles.wrapper}>
-      <Heading text="Hello Next222!!!" tag="h1" />
+      <Heading text="Hello Next!!!" tag="h1" />
     </div>
   );
 };
