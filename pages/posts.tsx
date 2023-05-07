@@ -1,9 +1,13 @@
-import Heading from "@/components/heading";
+import Heading from '@/components/heading';
+import Head from 'next/head';
 
 const Posts = () => {
   return (
     <>
-      <Heading text="Post list:" tag="h2"/>
+      <Head>
+        <title>Posts</title>
+      </Head>
+      <Heading text="Post list:" tag="h2" />
       <p>Lorem ipsum dolor sit amet.</p>
       <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
     </>

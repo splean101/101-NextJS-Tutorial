@@ -1,20 +1,24 @@
-import Heading from "@/components/heading";
-import { useEffect } from "react";
-import { useRouter } from "next/router";
+import Heading from '@/components/heading';
+import { useEffect } from 'react';
+import { useRouter } from 'next/router';
+import Head from 'next/head';
 
 const Error = () => {
-const router = useRouter()
+  const router = useRouter();
 
-useEffect(()=>{
-  setTimeout(()=>{
-router.push('/')
-  }, 3000)
-},[router])
+  useEffect(() => {
+    setTimeout(() => {
+      router.push('/');
+    }, 3000);
+  }, [router]);
 
   return (
     <>
+      <Head>
+        <title>Error</title>
+      </Head>
       <Heading text="404" tag="h1" />
-      <h2>Something is going wrong...</h2>
+      <Heading text="Something is going wrong..." tag="h2" />
     </>
   );
 };

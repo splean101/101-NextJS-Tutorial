@@ -2,9 +2,9 @@ import Heading from './heading';
 
 const Footer = () => {
   return (
-    <header>
+    <footer>
       <Heading text="Footer" tag="h3" />
-    </header>
+    </footer>
   );
 };
 
